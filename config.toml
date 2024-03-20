@@ -159,3 +159,19 @@ lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
   categories = "book"
   volumes = "volume"
 
+[module]
+  [[module.imports]]
+      path = "github.com/DjP-iX/hugo-modules"
+      disabled = false
+
+      [[module.imports.mounts]]
+      source = "data"
+      target = "data"
+
+      [[module.imports.mounts]]
+      source = "customcss/custom.css"
+      target = "static/custom.css"
+
+      [[module.imports.mounts]]
+      source = "common-images"
+      target = "static/images"
